@@ -32,12 +32,43 @@ body {
   width: 50%;
 }
 
+#info-subcontainer1 {
+  border: 5px solid brown;
+  width: 70%;
+  margin-left: 0;
+}
 .greeting {
   font-size: 6.25em;
   font-weight: bold;
 }
 
 .name-info {
+  font-size: 1.375em;
+  font-weight: bold;
+}
+
+#info-subcontainer2 {
+  border: 5px solid brown;
+  display: flex;
+  margin-left: 0;
+  width: 70%;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+
+  height: 140px;
+  width: 140px;
+  padding: 10px;
+
+  background-color: aliceblue;
+  color: black;
   font-size: 1.375em;
   font-weight: bold;
 }
