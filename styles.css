@@ -1,14 +1,80 @@
 /* https://colorhunt.co/palette/f1f1f1fdb82721209c23120b */
 
-*,
-html,
-body {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
+  background-color: #23120b;
+}
+
+.hundred-h {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  height: 60vh;
+  width: 100%;
   background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap-reverse;
+}
+
+.hero-img {
+  border: 1px solid black;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+.img {
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  background-color: #fdb827;
+}
+
+.hero-info {
+  border: 1px solid black;
+  flex: 1.5;
+}
+
+.hero-info h1 {
+  font-size: 6.25rem;
+  line-height: 1em;
+}
+
+.hero-info h2 {
+  font-size: 5rem;
+  line-height: 1em;
+}
+
+.hero-info p {
+  font-size: 3rem;
+  line-height: 1em;
+}
+
+/* About Section */
+.about {
+  background-color: #23120b;
+}
+
+/* Work Section */
+.work {
+  background-color: #f1f1f1;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #23120b;
 }
