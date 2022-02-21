@@ -63,6 +63,29 @@ body {
   line-height: 1em;
 }
 
+/* About Section Styling */
+
+header .title {
+  text-align: center;
+  font-size: 6em;
+  text-decoration: underline;
+}
+
+.education h2 {
+  text-align: center;
+  font-size: 3em;
+}
+.education {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .education {
+    width: 60%;
+  }
+}
+
 /* Contact Form Styling */
 form {
   background: #23120b;
