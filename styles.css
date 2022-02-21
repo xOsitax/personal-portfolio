@@ -92,64 +92,13 @@ body {
   width: 40px;
 }
 /* About Section Styling */
-
-header .title {
-  text-align: center;
-  font-size: 6em;
-  text-decoration: underline;
-}
-
-.hobbies-img {
-  min-width: 200px;
-  max-width: 300px;
-  height: auto;
-}
-
-.hobbies {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  column-gap: 1.5em;
-  padding: 1em;
-  margin: 1em;
-  flex: 1;
-}
-
-.card p {
-  min-width: 200px;
-  max-width: 600px;
-}
-
-.card h3 {
+.about-header {
+  font-size: 112px;
   text-align: center;
 }
 
-/* Card Test */
-.hobbies-container {
+.about {
   display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.hobbies-card {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  text-align: center;
-  flex: 1 1 0;
-  min-width: 200px;
-  height: 550px;
-  margin: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background: #fff;
-  padding: 0.5em;
 }
 
 /* Contact Form Styling */
