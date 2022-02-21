@@ -30,52 +30,67 @@ body {
 
 /* Hero Section */
 .hero {
-  height: 60vh;
-  width: 100%;
-  background-color: #f1f1f1;
+  padding: 4em;
   display: flex;
+  flex-flow: row wrap;
+  column-gap: 30px;
+  row-gap: 30px;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap-reverse;
-}
-
-.hero-img {
-  border: 1px solid black;
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 1em;
-  padding-right: 1em;
-  padding-bottom: 1em;
-}
-
-.img {
-  border: 1px solid black;
-  height: 400px;
-  width: 400px;
-  background-color: #fdb827;
+  color: #23120b;
 }
 
 .hero-info {
-  border: 1px solid black;
-  flex: 1.5;
+  max-width: 600px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-info h1 {
-  font-size: 6.25rem;
-  line-height: 1em;
+  font-size: 6em;
+  font-weight: bold;
 }
 
 .hero-info h2 {
-  font-size: 5rem;
-  line-height: 1em;
+  font-size: 3em;
+  font-weight: 600;
 }
 
-.hero-info p {
-  font-size: 3rem;
-  line-height: 1em;
+.hero-info h3 {
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
+.img-container {
+  max-width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.links-container {
+  max-width: 500px;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-container img {
+  width: 40px;
+}
 /* About Section Styling */
 
 header .title {
@@ -85,7 +100,8 @@ header .title {
 }
 
 .hobbies-img {
-  min-width: 300px;
+  min-width: 200px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -112,6 +128,28 @@ header .title {
 
 .card h3 {
   text-align: center;
+}
+
+/* Card Test */
+.hobbies-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.hobbies-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 0;
+  min-width: 200px;
+  height: 550px;
+  margin: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0.5em;
 }
 
 /* Contact Form Styling */
@@ -215,3 +253,5 @@ form .action input[type="submit"] {
     width: 100%;
   }
 }
+
+/* Store Page */
