@@ -1,5 +1,5 @@
 /* https://colorhunt.co/palette/f1f1f1fdb82721209c23120b */
-
+/* https://colorpalettes.net/color-palette-1868/ */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,6 +26,10 @@ body {
 
 .white {
   color: #f1f1f1;
+}
+
+.red {
+  color: red;
 }
 
 /* Hero Section */
@@ -123,9 +127,14 @@ body {
 
 .about-content {
   max-width: 700px;
+  padding: 1rem;
   font-size: clamp(1rem, 5vw + 0.2rem, 2rem);
+  background-color: #23120b;
+  color: #fdb827;
+  border-radius: 10px;
 }
 
+/* About - Hobbies */
 .hobbies {
   display: flex;
   flex-flow: column nowrap;
@@ -144,8 +153,49 @@ body {
   max-width: 700px;
   font-size: clamp(1rem, 5vw + 0.2rem, 1.6rem);
   padding: 1.5rem;
+  background-color: #23120b;
+  color: #fdb827;
+  border-radius: 10px;
+  margin: 10px;
 }
 
+/* About - Skills */
+.skills {
+  padding: 3em 5em;
+}
+
+.skills-header {
+  text-align: center;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.skills-box {
+  min-width: 200px;
+  max-width: 250px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+.skills-img {
+  min-width: 100px;
+}
+
+.skills-img img {
+  width: 100%;
+  height: auto;
+}
+.skills-content {
+  text-align: center;
+}
 /* Contact Form Styling */
 form {
   background: #23120b;
