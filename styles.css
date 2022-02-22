@@ -428,6 +428,9 @@ form .action input[type="submit"] {
 
 .shop-item {
   margin: 30px;
+  background-color: var(--carbon-color);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .shop-item-title {
@@ -448,11 +451,14 @@ form .action input[type="submit"] {
   display: flex;
   align-items: center;
   padding: 10px;
+  background-color: var(--watermelon-color);
+  border-radius: 10px;
 }
 
 .shop-item-price {
   flex-grow: 1;
-  color: #333;
+  color: var(--neutral-color);
+  font-weight: 600;
 }
 
 .shop-items {
@@ -553,8 +559,9 @@ form .action input[type="submit"] {
 }
 
 .cart-total-price {
-  color: #333;
   font-size: 1.1em;
+  color: var(--watermelon-color);
+  font-weight: 600;
 }
 
 .btn-purchase {
