@@ -108,6 +108,7 @@ body {
 
 .under-nametag {
   padding: 1rem;
+  text-align: center;
 }
 
 .under-nametag-span {
@@ -271,6 +272,7 @@ form .title h2 {
   display: inline-block;
   padding-bottom: 8px;
   margin-bottom: 32px;
+  font-weight: bold;
 }
 
 form .half {
@@ -290,6 +292,7 @@ form label {
   font-size: 13px;
   letter-spacing: 3.5px;
   margin-bottom: 16px;
+  font-weight: 700;
 }
 
 form .half .item input {
@@ -358,19 +361,6 @@ form .action input[type="submit"] {
 }
 
 /* Store Page */
-.band-name {
-  text-align: center;
-  margin: 0;
-  font-size: 4em;
-  font-family: "Booter - Zero Zero";
-  font-weight: normal;
-  color: white;
-}
-
-.band-name-large {
-  font-size: 8em;
-}
-
 .content-section {
   margin: 1em;
 }
@@ -381,20 +371,12 @@ form .action input[type="submit"] {
   padding: 0 1.5em;
 }
 .section-header {
-  font-family: "Metal Mania";
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   color: #333;
   text-align: center;
   font-size: 2.5em;
   padding: 1rem 0;
-}
-
-.about-band-image {
-  float: left;
-  height: 200px;
-  width: 200px;
-  margin: 15px;
-  border-radius: 50%;
 }
 
 .btn {
@@ -444,39 +426,6 @@ form .action input[type="submit"] {
   background-color: #2d9cdb;
 }
 
-.tour-row {
-  border-bottom: 1px solid black;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-}
-
-.tour-row:last-child {
-  border: none;
-}
-
-.tour-item {
-  display: inline-block;
-  padding-right: 0.5em;
-}
-
-.tour-date {
-  color: #555;
-  width: 11%;
-  font-weight: bold;
-}
-
-.tour-city {
-  width: 24%;
-}
-
-.tour-arena {
-  width: 42%;
-}
-
-.tour-btn {
-  max-width: 19%;
-}
-
 .shop-item {
   margin: 30px;
 }
@@ -498,7 +447,7 @@ form .action input[type="submit"] {
 .shop-item-details {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
 }
 
 .shop-item-price {
