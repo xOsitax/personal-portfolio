@@ -62,7 +62,7 @@ body {
 }
 
 .img-container {
-  max-width: 400px;
+  max-width: 380px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -93,12 +93,57 @@ body {
 }
 /* About Section Styling */
 .about-header {
-  font-size: 112px;
+  font-size: clamp(3rem, 12vw + 1rem, 7rem);
   text-align: center;
+  padding: 1rem;
 }
 
 .about {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px 50px;
+  flex-flow: row wrap;
+  padding: 1.5rem;
+}
+
+.about-img {
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-content {
+  max-width: 700px;
+  font-size: clamp(1rem, 5vw + 0.2rem, 2rem);
+}
+
+.hobbies {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.hobbies h2 {
+  font-size: clamp(2rem, 12vw + 1rem, 4rem);
+}
+
+.hobbies-card h3 {
+  text-align: center;
+}
+
+.hobbies-card {
+  max-width: 700px;
+  font-size: clamp(1rem, 5vw + 0.2rem, 1.6rem);
+  padding: 1.5rem;
 }
 
 /* Contact Form Styling */
