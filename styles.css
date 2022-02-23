@@ -296,6 +296,16 @@ body {
 }
 
 /* Contact Form Styling */
+
+.contact-body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.form-container {
+  flex: 1;
+}
 form {
   background: var(--sky-color);
   width: 640px;
