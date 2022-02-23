@@ -315,38 +315,36 @@ body {
   border-radius: 10px;
   background-color: var(--carbon-color);
   padding: 2em;
-  max-width: 600px;
+  max-width: 700px;
   flex: 1;
 }
 
-.form .wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.form-container form {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-.input-styling {
+.form-container .form-background form {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  gap: 1em;
 }
 
-.input-styling input {
+.inputs-container {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.input-styling {
   margin: 10px;
   padding: 10px;
   border-radius: 4px;
 }
 
-.email-phone-container {
+.input-message-container {
+  flex: 1;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-direction: column;
+  max-width: 300px;
 }
 
 /* Store Page */
