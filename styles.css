@@ -211,6 +211,14 @@ body {
   font-size: clamp(15px, 3vw, 20px);
 }
 
+.about-text a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 /* About Skills Section*/
 
 .container-icons {
