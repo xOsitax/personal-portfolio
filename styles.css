@@ -34,12 +34,16 @@ body {
   color: #21209c;
 }
 
+.grey {
+  color: var(--carbon-color);
+}
+
 .white {
-  color: #f1f1f1;
+  color: var(--neutral-color);
 }
 
 .red {
-  color: #ff3b3f;
+  color: var(--watermelon-color);
 }
 
 /* Homepage */
@@ -172,6 +176,7 @@ body {
 .wrapper h3 {
   text-transform: capitalize;
   font-family: "Poppins";
+  text-shadow: 1px 1px 2px rgba(169, 169, 169, 1);
 }
 
 .wrapper h2 {
@@ -237,67 +242,51 @@ body {
   font-size: clamp(15px, 3vw, 20px);
 }
 /* About - Hobbies */
-.hobbies {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-.hobbies h2 {
-  font-size: clamp(2rem, 12vw + 1rem, 4rem);
-}
-
-.hobbies-card h3 {
-  text-align: center;
-}
-
-.hobbies-card {
-  max-width: 700px;
-  font-size: clamp(1rem, 5vw + 0.2rem, 1.6rem);
-  padding: 1.5rem;
-  background-color: #23120b;
-  color: #fdb827;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-/* About - Skills */
-.skills {
-  padding: 3em 5em;
-}
-
-.skills-header {
-  text-align: center;
-}
-.skills-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.skills-box {
-  min-width: 200px;
-  max-width: 250px;
+.hobbies-container {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
+}
+
+.hobby-box {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
   padding: 1em;
+  width: 100%;
 }
 
-.skills-img {
-  min-width: 100px;
+.hobby-box h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(24px, 3vw, 36px);
+  text-shadow: 1px 1px 2px rgba(169, 169, 169, 1);
 }
 
-.skills-img img {
+.hobby-content {
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.hobby-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(15px, 3vw, 20px);
+  max-width: 700px;
+}
+
+.hobby-img {
+  max-width: 180px;
+  min-width: 80px;
+  max-height: 180px;
+  flex: 1;
+}
+
+.hobby-img img {
   width: 100%;
   height: auto;
 }
-.skills-content {
-  text-align: center;
-}
+
 /* Contact Form Styling */
 form {
   background: var(--sky-color);
