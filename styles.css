@@ -150,7 +150,7 @@ body {
 .links-container img {
   width: 40px;
 }
-/* About Section Styling */
+/* About Me Section*/
 .about-img-profile {
   max-width: 300px;
   height: auto;
@@ -181,7 +181,7 @@ body {
 .wrapper h3 {
   color: #333;
   margin: 0 0 20px;
-  font-size: 3em;
+  font-size: (1em, 12vw + 0.5em, 3em);
 }
 
 .about-content {
@@ -205,6 +205,33 @@ body {
   font-size: 20px;
 }
 
+/* About Skills Section*/
+
+.container-icons {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 1em;
+}
+.box-icons {
+  text-align: center;
+  /* border: 1px solid black; */
+  min-width: 200px;
+  max-width: 400px;
+  flex: 1;
+  padding: 0.5em;
+}
+
+.box-icons img {
+  width: 60px;
+  height: auto;
+}
+
+.box-icons p {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
 /* About - Hobbies */
 .hobbies {
   display: flex;
