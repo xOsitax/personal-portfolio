@@ -306,10 +306,47 @@ body {
 .form {
   flex: 1;
 }
-
 .form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-background {
   border-radius: 10px;
   background-color: var(--carbon-color);
+  padding: 2em;
+  max-width: 600px;
+  flex: 1;
+}
+
+.form .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-container form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.input-styling {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.input-styling input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.email-phone-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 /* Store Page */

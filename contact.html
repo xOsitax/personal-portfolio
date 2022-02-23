@@ -65,26 +65,39 @@
         <h2>contact me</h2>
         <h3>i'll get back to you asap!</h3>
         <div class="form-container">
-          <form action="">
-            <div class="name-container">
-              <div class="names">
-                <label for="firstname">First Name </label>
-                <input type="text" id="firstname" required />
+          <div class="form-background">
+            <form action="">
+              <div class="name-container input-styling">
+                <input
+                  type="text"
+                  id="firstname"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  id="lastname"
+                  placeholder="Last Name"
+                  required
+                />
               </div>
-              <div class="names">
-                <label for="lastname">Last Name</label
-                ><input type="text" id="lastname" required />
+              <div class="email-phone-container input-styling">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="Phone"
+                />
               </div>
-            </div>
-            <div class="email-container">
-              <label for="emai"
-                >Email:
-                <input type="email" name="email" id="email" />
-              </label>
-            </div>
-            <div class="message-container">
-              <label for="message"
-                >Message:
+              <div class="message-container">
                 <textarea
                   name="message"
                   id="message"
@@ -92,9 +105,12 @@
                   rows="10"
                   placeholder="Type your message here"
                 ></textarea>
-              </label>
-            </div>
-          </form>
+              </div>
+              <div class="input-container">
+                <input type="submit" value="Send Email" />
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
