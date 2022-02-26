@@ -557,4 +557,59 @@ body {
   font-size: 1.75em;
 }
 
-/* Footer */
+/* Work Page */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.project {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: center;
+  gap: 1em;
+  margin: 25px 0;
+}
+
+.project-info {
+  flex: 2;
+  max-width: 700px;
+  min-width: 300px;
+}
+
+.project-info a {
+  margin: 5px;
+}
+
+.project-info h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(24px, 3vw, 32px);
+  color: var(--sky-color);
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+}
+
+.project-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(20px, 3vw, 24px);
+}
+
+@media only screen and (max-width: 700px) {
+  .project-info {
+    text-align: center;
+  }
+}
+.project-img {
+  flex: 1;
+  max-width: 380px;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img img {
+  width: auto;
+  height: 250px;
+  border-radius: 10px;
+}
