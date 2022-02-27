@@ -374,6 +374,7 @@ body {
   background-color: var(--carbon-color);
   padding: 1rem;
   border-radius: 10px;
+  min-width: 300px;
 }
 
 .shop-item-title {
