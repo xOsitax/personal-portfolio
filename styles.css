@@ -206,11 +206,6 @@ body {
   font-size: clamp(24px, 3vw, 32px);
 }
 
-.about-text p {
-  font-family: "Roboto", sans-serif;
-  font-size: clamp(15px, 3vw, 20px);
-}
-
 .about-text a {
   text-decoration: none;
 }
@@ -279,8 +274,6 @@ body {
 }
 
 .hobby-content p {
-  font-family: "Roboto", sans-serif;
-  font-size: clamp(15px, 3vw, 20px);
   max-width: 700px;
 }
 
@@ -539,11 +532,6 @@ body {
   text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
 
-.project-info p {
-  font-family: "Roboto", sans-serif;
-  font-size: clamp(15px, 3vw, 20px);
-}
-
 @media only screen and (max-width: 700px) {
   .project-info {
     text-align: center;
@@ -602,10 +590,6 @@ body {
   color: var(--sky-color);
   text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
-.goals .goal-info {
-  font-family: "Roboto", sans-serif;
-  font-size: clamp(15px, 3vw, 20px);
-}
 
 /* Contact Form Styling */
 
@@ -624,11 +608,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.form-container p {
-  font-family: "Roboto", sans-serif;
-  font-size: clamp(15px, 3vw, 20px);
-  justify-self: flex-start;
 }
 
 .form-container form {
@@ -652,4 +631,9 @@ body {
   margin: 0.5rem 0;
   border-radius: 5px;
   box-shadow: 2px 2px var(--sky-color);
+}
+
+.paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(15px, 3vw, 20px);
 }
