@@ -1,3 +1,5 @@
+//Clock Functionality
+
 setInterval(showTime, 1000);
     function showTime(){
         let time = new Date();
@@ -24,3 +26,12 @@ setInterval(showTime, 1000);
         document.getElementsByClassName("clock")[0].innerHTML = currentTime;
     }
 showTime();
+
+//Dark Mode Functionality
+var darkModeButton = document.getElementsByClassName("dmodeBtn")[0];
+darkModeButton.addEventListener('click', toggleDarkMode);
+
+function toggleDarkMode(){
+    var body = document.body;
+    body.classList.toggle("dark-mode-body");
+}

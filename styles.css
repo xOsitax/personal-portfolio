@@ -662,3 +662,27 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: clamp(15px, 3vw, 20px);
 }
+
+/* Dark Mode */
+.dmodeBtn-container {
+  min-width: 50px;
+  border-radius: 5px;
+  position: fixed;
+  top: 100px;
+  left: 50px;
+}
+
+.dmodeBtn {
+  width: 100%;
+  height: auto;
+}
+
+.dark-mode-body {
+  background-color: #f1f1f1;
+  background: url(./images/Simple\ Shiny\ -\ Dark.svg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
