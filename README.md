@@ -8,4 +8,4 @@
 
 # - All html files passed the HTML5 validator tests and the CSS file passed the CSS validator tests
 
-# - Uses JS for more functionality such as a dark mode button, a message box when an item is added, and a clock
+# - Uses JS for more functionality such as a hover function, a message box when an item is added, and a clock
