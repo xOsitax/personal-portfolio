@@ -140,7 +140,8 @@ body {
 /* Footer Links */
 .links {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 1em;
 }
 
@@ -153,6 +154,12 @@ body {
 
 .links-container img {
   width: 40px;
+}
+
+.footer-info {
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 /* About Me Section*/
 .about-img-profile {
