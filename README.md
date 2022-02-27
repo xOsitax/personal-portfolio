@@ -2,8 +2,10 @@
 
 # Created using HTML, CSS, and JavaScript
 
-# 3. Uses the following semantic elements: header, footer, nav, section, time
+# - Uses the following semantic elements: header, footer, nav, section, time
 
-# 4. Uses the following Bootstrap elements: button, table, navbar
+# - Uses the following Bootstrap elements: button, table, navbar
 
-# 5. All html files passed the HTML5 validator tests and the CSS file passed the CSS validator tests
+# - All html files passed the HTML5 validator tests and the CSS file passed the CSS validator tests
+
+# - Uses JS for more functionality such as a dark mode button, a message box when an item is added, and a clock
