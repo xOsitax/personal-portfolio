@@ -1,26 +1,38 @@
-setInterval(showTime, 1000);
-    function showTime(){
-        let time = new Date();
-        let hour = time.getHours();
-        let min = time.getMinutes();
-        let sec = time.getSeconds();
-        am_pm = "AM";
-    
-        if (hour > 12) {
-            hour -= 12;
-            am_pm = "PM";
-        } 
-        if (hour == 0) {
-            hr = 12;
-            am_pm = "AM";
-        }
-    
-        hour = hour < 10 ? "0" + hour : hour;
-        min = min < 10 ? "0" + min : min;
-        sec = sec < 10 ? "0" + sec : sec;
-    
-        let currentTime = hour  + ":" + min + ":" + sec + " " + am_pm;
-    
-        document.getElementsByClassName("clock")[0].innerHTML = currentTime;
-    }
-showTime();
+var htwos = document.getElementsByTagName("h2");
+var hthrees = document.getElementsByTagName("h3");
+var hfours = document.getElementsByTagName("h4");
+
+for(var i =0; i<htwos.length;i++){ 
+    //console.log(htwos[i]);
+    htwos[i].addEventListener("mouseover", function(){
+        this.style.textDecoration = "underline";
+        
+    }, true);
+    htwos[i].addEventListener("mouseout", function () {
+        this.style.textDecoration = "none";
+    });
+}
+
+for(var i =0; i<hthrees.length;i++){ 
+    //console.log(htwos[i]);
+    hthrees[i].addEventListener("mouseover", function(){
+        this.style.textDecoration = "underline";
+        
+    }, true);
+    hthrees[i].addEventListener("mouseout", function () {
+        this.style.textDecoration = "none";
+    });
+}
+for(var i =0; i<hfours.length;i++){ 
+    //console.log(htwos[i]);
+    hfours[i].addEventListener("mouseover", function(){
+        this.style.textDecoration = "underline";
+        
+    }, true);
+    hfours[i].addEventListener("mouseout", function () {
+        this.style.textDecoration = "none";
+    });
+}
+
+
+

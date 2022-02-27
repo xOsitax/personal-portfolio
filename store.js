@@ -30,6 +30,11 @@ function ready(){
 
     document.getElementsByClassName("btn-purchase")[0].addEventListener('click', purchaseClicked);
     
+    //JQuery Function to show item has been added message
+    $(".shop-item-button").click(function() {
+        console.log("Add to Cart Button has been clicked");
+        $(".message-box").finish().fadeIn("fast").delay(3000).fadeOut("slow");
+    });
     
 }
 
@@ -51,10 +56,6 @@ function purchaseClicked(){
     updateCartTotal();
     
        
-}
-
-function outputPurchasedItemsToUser(cartItems) {
-    
 }
 
 function removeCartItem(event) {
@@ -93,6 +94,7 @@ function addItemToCart(title, price, imageSource) {
             return;
         }
     }
+
     var cartRowContents = `
         <div class="cart-item cart-column">
             <img
@@ -130,4 +132,3 @@ function updateCartTotal(){
     total = Math.round(total * 100) / 100; //round total to nearest 2 decimal places
     document.getElementsByClassName("cart-total-price")[0].innerText = "$" + total;
 }
-
