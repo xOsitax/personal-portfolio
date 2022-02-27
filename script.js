@@ -32,14 +32,27 @@ function ready(){
 }
 
 function purchaseClicked(){
-    alert("Thank you for your purchase.");
+    var alertOutput = "Thank you for your purchase. \n\nRECEIPT:";
     var cartItems = document.getElementsByClassName("cart-items")[0];
+    
     while(cartItems.hasChildNodes()) {
+        var itemName = cartItems.firstChild.getElementsByClassName("cart-item-title")[0].innerText;
+        var itemPrice = cartItems.firstChild.getElementsByClassName("cart-price")[0].innerText;
+        var itemQuantity = cartItems.firstChild.getElementsByClassName("cart-quantity-input")[0].value;
+        var itemInfo = `\nItem: ${itemName} - Price: ${itemPrice} - Quantity: ${itemQuantity}`;
+        alertOutput += itemInfo;
         cartItems.removeChild(cartItems.firstChild);
-
     }
+    var cartTotal = `\nTotal: ${document.getElementsByClassName("cart-total-price")[0].innerText}`;
+    alertOutput += cartTotal;
+    alert(alertOutput); 
     updateCartTotal();
+    
+       
+}
 
+function outputPurchasedItemsToUser(cartItems) {
+    
 }
 
 function removeCartItem(event) {
