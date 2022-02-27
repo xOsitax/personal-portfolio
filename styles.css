@@ -62,7 +62,7 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 70px;
-  row-gap: 30px;
+  row-gap: 10px;
   margin: 1em;
 }
 
@@ -76,7 +76,7 @@ body {
   border-radius: 15px;
   padding: 1em 0 1.5em 0;
   text-align: center;
-  min-width: clamp(200px, 12vw + 20px, 700px);
+  min-width: clamp(300px, 12vw + 20px, 700px);
   border: 1px solid black;
 }
 
@@ -89,10 +89,11 @@ body {
 }
 
 .nametag p {
+  display: inline-block;
   font-size: clamp(1rem, 5vw + 0.2rem, 3rem);
   margin-top: 0;
-  margin-bottom: 5px;
-  line-height: 4rem;
+  margin-bottom: 15px;
+  line-height: 2.5rem;
   color: var(--neutral-color);
 }
 
@@ -116,6 +117,7 @@ body {
 }
 
 .under-nametag-span {
+  display: inline-block;
   background-color: var(--sky-color);
   margin: 5px;
   padding: 5px;
